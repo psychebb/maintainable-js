@@ -17,6 +17,7 @@ module.exports = function(config) {
     files: [
       'vendor/jquery/dist/jquery.js',
       'vendor/jasmine-jquery/lib/jasmine-jquery.js',
+      'vendor/underscore/underscore-min.js',
       'src/js/*.js',
       'spec/**/*-spec.js'
     ],
