@@ -3,10 +3,10 @@ describe('search view', function(){
 
     it('should render the search result', function(){
         var container = $('<div class="panel large-12 columns">');
-        var searchResult = new SearchResult(container);
-        expect(searchResult.render).toBeDefined();
+        var searchLocationView = new SearchLocationView(container);
+        expect(searchLocationView.render).toBeDefined();
 
-        searchResult.render({'name': 'beijing', 'description': 'desc'});
+        searchLocationView.render({'name': 'beijing', 'description': 'desc'});
         expect($(container).find('h5')).toContainText('beijing');
         expect($(container).find('h6')).toContainText('desc');
     })
