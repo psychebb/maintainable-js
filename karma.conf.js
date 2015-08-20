@@ -15,6 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      { pattern: 'spec/fixtures/*.html', included: false, served: true },
       'vendor/jquery/dist/jquery.js',
       'vendor/jasmine-jquery/lib/jasmine-jquery.js',
       'vendor/underscore/underscore-min.js',
